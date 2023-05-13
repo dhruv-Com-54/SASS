@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Hebbo';
+    src: url(Font/Heebo/static/Heebo-Regular.ttf);
+}
+$color-white:white;
+$bg-colors:#2124B1;
+
+@mixin common($flex,$color-white,$font-weight){
+    display: $flex;
+    color: $color-white;
+    font-weight: $font-weight;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import "Navbar";
+
+@import "Section";
+
+@import "Footer";

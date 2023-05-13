@@ -1,0 +1,111 @@
+.nav{
+    width: 100%;
+    padding-bottom: 25px;   
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+.bg-color{
+    position: absolute;
+    .fa-magnifying-glass{
+        font-size: 50px;
+        margin-left: 50px;
+        color: $color-white;
+        cursor: pointer;
+        position: relative
+    }
+    .logo{
+        @include common(flex,white,bolder);
+        font-size: 40px;
+        padding-top: 20px;
+        font-family: 'Roboto',sans-serif;
+        cursor: pointer;
+        .line{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-bottom:1px solid rgba(256, 256, 256, .1);
+            z-index: 999;
+        }
+        p{
+            margin-left: 10px;
+        cursor: pointer;
+        }
+    }
+    .logo-2{
+        font-size: 25px;
+        padding-top: 15px;
+        font-family: 'Roboto',sans-serif;
+        @include common(0,0,bolder)
+    }
+    .navs li a{
+        // color:chartreuse;
+        text-decoration: none;
+        padding-left: 60px;
+        margin-top: 40px;
+        @include common(0,white,0);
+        font-family: 'Hebbo',sans-serif;
+    }
+    .navs{
+        padding-left: 300px;
+        font-size: 16px;
+        padding-top: 40px;
+        .box{
+            position: absolute;
+            margin-top: 15px;
+            left: 1060px;
+            height: 30px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid black;
+            display:none;
+        }
+        .text{
+            margin-top: 10px;
+            margin-left: 04px;
+            border-top:none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+            width:290px;
+            border-bottom: 1px solid black;
+        }
+        li:first-child a{
+            color:#4777F5;
+        }
+        li a:hover{
+            color: #4777F5;
+        }
+        i{
+            color: #4777F5;
+            cursor: pointer;
+            font-size: 20px;
+        }        
+        button{
+            margin-top: -15px;
+            height: 50px;
+            width: 140px;
+            border-radius: 30px;
+            margin-left: 20px;
+            background-color: #4777F5;
+            border: none;
+            cursor: pointer;
+            @include common(0,white,bolder);
+            font-size: 15px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+
+
